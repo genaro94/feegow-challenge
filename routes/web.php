@@ -2,4 +2,4 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', 'ScheduleController@index');
+Route::get('/', 'ScheduleController@index')->name('home');
