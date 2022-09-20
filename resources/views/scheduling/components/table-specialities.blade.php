@@ -11,6 +11,9 @@
                 <th scope="col" class="py-3 px-6">
                     Registro
                 </th>
+                <th scope="col" class="py-3 px-6">
+
+                </th>
             </tr>
         </thead>
         <tbody>
@@ -24,7 +27,17 @@
                 <td class="py-4 px-6">
                     CRO1234
                 </td>
+                <td class="py-4 px-6">
+                    <button type="button" class="openModal bg-transparent hover:bg-gray-400 text-gray-700 font-semibold
+                                                 hover:text-white py-2 px-4 border border-gray-500 hover:border-transparent
+                                                 rounded data-bs-toggle="modal"
+                                                 data-bs-target="#modalScheduling">
+                        Agendar
+                    </button>
+                </td>
             </tr>
         </tbody>
     </table>
 </div>
+
+@include('scheduling.components.modal')

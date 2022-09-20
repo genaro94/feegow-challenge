@@ -5,7 +5,7 @@
         </span>
 
         <a href="https://api.whatsapp.com/send?phone=5521979197107"
-            target="_blank" title="Fale comigo no Whats"
+            target="_blank" title="Fale comigo no WhatsApp"
             class="flex items-center transition-all duration-200 hover:-translate-y-2">
             <svg
                 class="w-6 h-6 text-green-400 fill-current mr-2"

@@ -7,6 +7,7 @@
         <link rel="dns-prefetch" href="//fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
         <link rel="icon" href="{{ asset('images/cropped-logo-feegow-nova-marca-32x32.png') }} " sizes="32x32" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <title>Feegow</title>
     </head>
     <body class="h-screen">
@@ -36,5 +37,8 @@
             @include('layouts.footers.index')
         </div>
     </body>
+
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="{{ asset('js/modal-scheduling.js' )}}"></script>
+
 </html>
