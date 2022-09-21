@@ -28,5 +28,10 @@ class AppServiceProvider extends ServiceProvider
             'App\Http\Interfaces\Patient\IPatientListSource',
             'App\Application\Patient\PatientListSource',
         );
+
+        $this->app->bind(
+            'App\Http\Interfaces\Patient\IPatientList',
+            'App\Application\Patient\PatientList',
+        );
     }
 }

@@ -14,17 +14,10 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" title="Pacientes"
+                    <a href="{{ route('patients.list') }}" title="Pacientes"
                         class="p-3 transition-all duration-200 hover:bg-gradient-to-r
                         hover:from-green-400 hover:to-blue-500 hover:text-white">
                         Pacientes
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#" title="Profissionais"
-                        class="p-3 transition-all duration-200 hover:bg-gradient-to-r
-                        hover:from-green-400 hover:to-blue-500 hover:text-white">
-                        Profissionais
                     </a>
                 </li>
                 <li class="nav-item">
