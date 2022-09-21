@@ -14,7 +14,8 @@
 
                         <option value="">Selecione a Especialidade</option>
                         @foreach($specialties['content'] as $specialty)
-                            <option value="{{ $specialty['especialidade_id'] }}">
+                            <option value="{{ $specialty['especialidade_id'] }}"
+                                        {{ ( $specialty['especialidade_id'] == ( empty($_GET['especialidade_id']) ? '' : $_GET['especialidade_id'])) ? 'selected' : '' }} >
                                 {{ $specialty['nome'] }}
                             </option>
                         @endforeach
