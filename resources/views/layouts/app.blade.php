@@ -19,7 +19,7 @@
             <main>
                 <div class="relative items-top justify-center dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
                     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
-                        <div class="mt-20 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
+                        <div class="mt-20 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg  mb-16">
                             <div class="col-md-12 border border-color: rgb(229 231 235)">
                                 <div class="p-6">
                                     <div class="flex items-center">
@@ -40,5 +40,6 @@
 
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="{{ asset('js/modal-scheduling.js' )}}"></script>
+    <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
 
 </html>

@@ -1,4 +1,4 @@
-<footer class="h-footer flex bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-between py-4 absolute bottom-0 w-full">
+<footer class="h-footer flex bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-between py-4 fixed bottom-0 w-full left-0">
     <div class="text-md container mx-auto flex items-center justify-between text-white">
         <span>
             ©2022 Feegow Software Clínico. Todos os direitos reservados.

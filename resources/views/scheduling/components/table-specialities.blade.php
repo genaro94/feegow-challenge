@@ -11,21 +11,22 @@
                 <th scope="col" class="py-3 px-6">
                     Registro
                 </th>
-                <th scope="col" class="py-3 px-6">
-
-                </th>
+                <th scope="col" class="py-3 px-6"></th>
             </tr>
         </thead>
         <tbody>
+            @foreach ($professionals as $professional)
             <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600">
                 <th scope="row" class="py-4 px-6 font-medium text-gray-900 whitespace-nowrap dark:text-white">
-                    João de Oliveira Silva
+                    {{ $professional['tratamento'] }} {{ $professional['nome'] }}
                 </th>
                 <td class="py-4 px-6">
-                    Aparelho
+                    @foreach ($professional['especialidades'] as $specialty )
+                        <li> {{ $specialty['nome_especialidade'] }} </li>
+                    @endforeach
                 </td>
                 <td class="py-4 px-6">
-                    CRO1234
+                    {{ $professional['conselho'] }} {{ $professional['documento_conselho'] }}
                 </td>
                 <td class="py-4 px-6">
                     <button type="button" class="openModal bg-transparent hover:bg-gray-400 text-gray-700 font-semibold
@@ -36,8 +37,10 @@
                     </button>
                 </td>
             </tr>
+            @endforeach
         </tbody>
     </table>
+    {{$professionals->render()}}
 </div>
 
 @include('scheduling.components.modal')

@@ -9,15 +9,15 @@
                     <form class="space-y-6" action="#" method="POST">
                         @csrf
                         <div>
-                            <label for="nome" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nome Completo</label>
-                            <input name="nome" id="nome" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nome Completo</label>
+                            <input name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                                                                 focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
                                                                 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
                                 placeholder="Nome Completo do Paciente" required>
                         </div>
                         <div>
-                            <label for="nascimento" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nascimento</label>
-                            <input name="nascimento" id="nascimento"
+                            <label for="birthdate " class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nascimento</label>
+                            <input name="birthdate " id="birthdate "
                                     placeholder="00/00/0000"
                                     class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
                                             focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
@@ -31,22 +31,37 @@
                                     block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
                                     dark:placeholder-gray-400 dark:text-white" required>
                         </div>
+
                         <div>
-                            <label for="como-conheceu" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Como Conheceu?</label>
-                            <select class="bg-gray-50 border border-gray-300 text-gray-900 text-sm
+                            <label for="date_time" class="block mb-2 text-sm font-medium
+                                                              text-gray-900 dark:text-gray-300">Data da Consulta</label>
+                            <input type="datetime-local" class="bg-gray-50 border border-gray-300
+                                                                 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500
+                                                                 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700
+                                                                 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                                                                 dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                                                placeholder="00/00/00 00:00">
+                        </div>
+
+                        <div>
+                            <label for="source_id" class="block mb-2 text-sm font-medium
+                                                              text-gray-900 dark:text-gray-300">Como Conheceu?</label>
+                            <select name="source_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm
                                             rounded-lg focus:ring-blue-500 focus:border-blue-500 block
                                             w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
-                                            dark:placeholder-gray-400 dark:text-white">
+                                            dark:placeholder-gray-400 dark:text-white" required>
 
-                                <option name="">Selecione</option>
-                                <option >...</option>
+                                <option value="">Selecione como nós conheceu</option>
+                                @foreach ($listSources['content'] as $howDid)
+                                    <option value="{{ $howDid['origem_id'] }}" > {{ $howDid['nome_origem'] }} </option>
+                                @endforeach
                             </select>
                         </div>
                     </form>
                 </div>
             </div>
             <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                <button type="button" class="w-full inline-flex justify-center rounded-md border
+                <button type="submit" class="w-full inline-flex justify-center rounded-md border
                                             border-transparent shadow-sm px-4 py-2 bg-blue-600 text-base
                                             font-medium text-white hover:bg-gradient-to-r
                                             hover:from-green-400 hover:to-blue-500 hover:text-white focus:outline-none
