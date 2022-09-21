@@ -16,6 +16,9 @@
 
             @include('layouts.headers.index')
 
+            @include('scheduling.components.alerts.create-success')
+            @include('scheduling.components.alerts.create-failed')
+
             <main>
                 <div class="relative items-top justify-center dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
                     <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
@@ -42,4 +45,5 @@
     <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
 
     <script src="{{ asset('js/modal-scheduling.js' )}}"></script>
+    <script src="{{ asset('js/alert-message.js' )}}"></script>
 </html>

@@ -36,5 +36,16 @@ class AppServiceProvider extends ServiceProvider
             'App\Http\Interfaces\Patient\IPatientList',
             'App\Application\Patient\PatientList',
         );
+
+        $this->app->bind(
+            'App\Http\Interfaces\Schedule\IScheduleCreation',
+            'App\Application\Schedule\ScheduleCreation',
+        );
+
+
+        $this->app->bind(
+            'App\Application\Interfaces\IPersistScheduleRepository',
+            'App\Infrastructure\PersistenceViaEloquent\Schedules\ScheduleRepository',
+        );
     }
 }
