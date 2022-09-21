@@ -39,7 +39,7 @@
     </body>
 
     <script src="https://cdn.tailwindcss.com"></script>
-    <script src="{{ asset('js/modal-scheduling.js' )}}"></script>
     <script src="https://unpkg.com/flowbite@1.5.3/dist/datepicker.js"></script>
 
+    <script src="{{ asset('js/modal-scheduling.js' )}}"></script>
 </html>
