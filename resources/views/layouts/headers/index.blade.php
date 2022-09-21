@@ -20,13 +20,6 @@
                         Pacientes
                     </a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" title="Agenda"
-                        class="p-3 transition-all duration-200 hover:bg-gradient-to-r
-                        hover:from-green-400 hover:to-blue-500 hover:text-white">
-                        Agenda
-                    </a>
-                </li>
             </ul>
         </nav>
     </header>
