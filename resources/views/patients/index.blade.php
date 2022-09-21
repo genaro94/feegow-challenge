@@ -4,6 +4,6 @@
 
     @section('title', 'PACIENTES')
 
-    @include('patients.components.table-patients')
+    @include('patients.components.tables.lists')
 
 @endsection

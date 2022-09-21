@@ -4,10 +4,10 @@
 
     @section('title', 'AGENDAMENTO')
 
-    @include('scheduling.components.select-specialties')
+    @include('scheduling.components.selects.specialties')
 
-    @include('scheduling.components.table-specialities')
+    @include('scheduling.components.tables.specialities')
 
-    @include('scheduling.components.modal')
+    @include('scheduling.components.modals.request-time')
 
 @endsection
