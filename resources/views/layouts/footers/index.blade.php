@@ -1,11 +1,11 @@
-<footer class="h-footer flex bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-between py-4 absolute bottom-0 w-full">
+<footer class="h-footer flex bg-gradient-to-r from-green-400 to-blue-500 flex items-center justify-between py-4 fixed bottom-0 w-full left-0">
     <div class="text-md container mx-auto flex items-center justify-between text-white">
         <span>
             ©2022 Feegow Software Clínico. Todos os direitos reservados.
         </span>
 
         <a href="https://api.whatsapp.com/send?phone=5521979197107"
-            target="_blank" title="Fale comigo no Whats"
+            target="_blank" title="Fale comigo no WhatsApp"
             class="flex items-center transition-all duration-200 hover:-translate-y-2">
             <svg
                 class="w-6 h-6 text-green-400 fill-current mr-2"
