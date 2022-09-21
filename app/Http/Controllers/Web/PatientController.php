@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use App\Http\Interfaces\Patient\IPatientList;
-use Illuminate\Http\Request;
+use App\Services\CollectionPaginator as Paginator;
 
 class PatientController extends Controller
 {
@@ -13,6 +13,8 @@ class PatientController extends Controller
     public function index()
     {
         $patients = $this->patientList->execute();
-        return view('patients.list', compact('patients'));
+        $patients = Paginator::paginate($patients['content'], 10);
+
+        return view('patients.index', compact('patients'));
     }
 }

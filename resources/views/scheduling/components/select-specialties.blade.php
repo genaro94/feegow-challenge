@@ -29,7 +29,5 @@
             </form>
         </div>
     </div>
-
 </div>
 
-@include('scheduling.components.table-specialities')

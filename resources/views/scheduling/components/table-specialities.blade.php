@@ -42,5 +42,3 @@
     </table>
     {{$professionals->render()}}
 </div>
-
-@include('scheduling.components.modal')
