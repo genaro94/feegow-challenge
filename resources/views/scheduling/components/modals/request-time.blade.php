@@ -8,56 +8,61 @@
                 <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
                     <div class="py-6 px-6 lg:px-8">
                         <h3 class="mb-4 text-xl font-medium text-gray-900 dark:text-white">Solicitar Horário</h3>
-                            <div>
-                                <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nome Completo</label>
-                                <input name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                                                                    focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
-                                                                    dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
-                                    placeholder="Nome Completo do Paciente" required>
-                            </div>
-                            <div>
-                                <label for="birthdate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nascimento</label>
-                                <input name="birthdate" id="birthdate"
-                                        placeholder="00/00/0000" type="date"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
-                                                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
-                                                dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
-                            </div>
-                            <div>
-                                <label for="cpf" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">CPF</label>
-                                <input name="cpf" id="cpf" placeholder="000.000.000-00"
-                                        class="bg-gray-50 border border-gray-300 text-gray-900
-                                        text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500
-                                        block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
-                                        dark:placeholder-gray-400 dark:text-white" required>
-                            </div>
+                        <div>
+                            <label for="name" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nome Completo</label>
+                            <input name="name" id="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                                                                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                                                                dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                                placeholder="Nome Completo do Paciente" required>
+                        </div>
+                        <div>
+                            <label for="birthdate" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Nascimento</label>
+                            <input name="birthdate" id="birthdate"
+                                    placeholder="00/00/0000" type="date"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg
+                                            focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+                                            dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white" required>
+                        </div>
+                        <div>
+                            <label for="cpf" class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">CPF</label>
+                            <input name="cpf" id="cpf" placeholder="000.000.000-00"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900
+                                    text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500
+                                    block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
+                                    dark:placeholder-gray-400 dark:text-white" required>
+                        </div>
 
-                            <div>
-                                <label for="date_time" class="block mb-2 text-sm font-medium
-                                                                text-gray-900 dark:text-gray-300">Data da Consulta</label>
-                                <input type="datetime-local" class="bg-gray-50 border border-gray-300
-                                                                    text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500
-                                                                    focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700
-                                                                    dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
-                                                                    dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                        name="date_time" placeholder="00/00/00 00:00">
-                            </div>
+                        <div>
+                            <label for="date_time" class="block mb-2 text-sm font-medium
+                                                            text-gray-900 dark:text-gray-300">Data da Consulta</label>
+                            <input type="datetime-local" class="bg-gray-50 border border-gray-300
+                                                                text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500
+                                                                focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700
+                                                                dark:border-gray-600 dark:placeholder-gray-400 dark:text-white
+                                                                dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    name="date_time" placeholder="00/00/00 00:00">
+                        </div>
 
-                            <div>
-                                <label for="source_id" class="block mb-2 text-sm font-medium
-                                                                text-gray-900 dark:text-gray-300">Como Conheceu?</label>
-                                <select name="source_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm
-                                                rounded-lg focus:ring-blue-500 focus:border-blue-500 block
-                                                w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
-                                                dark:placeholder-gray-400 dark:text-white" required>
+                        <div>
+                            <label for="source_id" class="block mb-2 text-sm font-medium
+                                                            text-gray-900 dark:text-gray-300">Como Conheceu?</label>
+                            <select name="source_id" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm
+                                            rounded-lg focus:ring-blue-500 focus:border-blue-500 block
+                                            w-full p-2.5 dark:bg-gray-600 dark:border-gray-500
+                                            dark:placeholder-gray-400 dark:text-white" required>
 
-                                    <option value="">Selecione como nós conheceu</option>
-                                    @foreach ($listSources['content'] as $howDid)
-                                        <option value="{{ $howDid['origem_id'] }}" > {{ $howDid['nome_origem'] }} </option>
-                                    @endforeach
-                                </select>
-                            </div>
-
+                                <option value="">Selecione como nós conheceu</option>
+                                @foreach ($listSources['content'] as $howDid)
+                                    <option value="{{ $howDid['origem_id'] }}" > {{ $howDid['nome_origem'] }} </option>
+                                @endforeach
+                            </select>
+                        </div>
+                        <div>
+                            <input type="hidden" name="specialty_id" id="specialty_id" class="specialty_id" required >
+                        </div>
+                        <div>
+                            <input type="hidden" name="professional_id" id="professional_id" class="professional_id" required >
+                        </div>
                     </div>
                 </div>
                 <div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
@@ -81,3 +86,5 @@
         </div>
     </div>
 </div>
+
+
