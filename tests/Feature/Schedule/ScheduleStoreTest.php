@@ -38,4 +38,17 @@ class ScheduleStoreTest extends TestCase
         ->assertSessionHasNoErrors()
         ->with(['success' => __('Agendado com sucesso!')]);
     }
+
+    public function test_specialty_id_required(): void
+    {
+        $this->post('/schedule/store', [
+            'specialty_id'     => null,
+            'professional_id'  => 2,
+            'name'             => 'Maria da Conceição Silva',
+            'cpf'              => 1234567890,
+            'source_id'        => 2,
+            'birthdate'        => '1990-09-09',
+            'date_time'        => Carbon::today()->format('Y-m-d H:m:s'),
+        ])->assertSessionHasErrors(['specialty_id']);
+    }
 }
