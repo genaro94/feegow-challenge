@@ -2,8 +2,8 @@
 
 namespace Tests\Feature\Patient;
 
-use Illuminate\Foundation\Testing\RefreshDatabase;
-use Illuminate\Foundation\Testing\WithFaker;
+use App\Services\CollectionPaginator as Paginator;
+use App\Facades\ExternalApiFacade;
 use Tests\TestCase;
 
 class PatientListTest extends TestCase
@@ -13,5 +13,11 @@ class PatientListTest extends TestCase
         $response = $this->get('/patients');
 
         $response->assertStatus(200);
+    }
+
+    public function test_the_page_patient_with_listing(): void
+    {
+        $this->get('/patients')
+             ->assertViewHasAll(['patients']);
     }
 }
