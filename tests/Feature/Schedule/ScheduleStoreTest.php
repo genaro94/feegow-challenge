@@ -103,4 +103,17 @@ class ScheduleStoreTest extends TestCase
             'date_time'        => Carbon::today()->format('Y-m-d H:m:s'),
         ])->assertSessionHasErrors(['source_id']);
     }
+
+    public function test_birthdate_required(): void
+    {
+        $this->post('/schedule/store', [
+            'specialty_id'     => 1,
+            'professional_id'  => 2,
+            'name'             => 'Maria da Conceição Silva',
+            'cpf'              => 1234567890,
+            'source_id'        => 2,
+            'birthdate'        => null,
+            'date_time'        => Carbon::today()->format('Y-m-d H:m:s'),
+        ])->assertSessionHasErrors(['birthdate']);
+    }
 }
