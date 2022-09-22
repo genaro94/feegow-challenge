@@ -27,4 +27,23 @@ class SchedulePageHomeTest extends TestCase
                 'professionals'  => $professionals
              ]);
     }
+
+    public function test_the_homepage_with_professionals_listing_by_specialty_id(): void
+    {
+        $specialties   = ExternalApiFacade::get('/specialties/list')->json();
+
+        $professionals = ExternalApiFacade::get('/professional/list' , [
+            'ativo'             => true,
+            'especialidade_id'  => $specialties['content'][0]['especialidade_id']
+        ])->json();
+
+        $professionals = Paginator::paginate($professionals['content'], 10);
+
+        $this->get('/?especialidade_id=' . $specialties['content'][0]['especialidade_id'])
+             ->assertViewHasAll([
+                'specialties'    => $specialties,
+                'listSources'    => ExternalApiFacade::get('/patient/list-sources')->json(),
+                'professionals'  => $professionals
+             ]);
+    }
 }
