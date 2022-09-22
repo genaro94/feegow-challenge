@@ -26,7 +26,7 @@ class ScheduleStoreTest extends TestCase
 
     public function test_store_schedule_with_message_success(): void
     {
-        $response = $this->post('/schedule/store', [
+        $this->post('/schedule/store', [
             'specialty_id'     => 1,
             'professional_id'  => 2,
             'name'             => 'Maria da Conceição Silva',
