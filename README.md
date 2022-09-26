@@ -1,10 +1,10 @@
 ## 📝Feegow Challenge
 
-Esse é um teste focado em design de código, e conhecimento de orientação a objeto. O objetivo é avaliar sua experiênica em escrever código de fácil manutenção, baixo acoplamento, e alta coesão.
+Esse é um teste focado em design de código, e conhecimento de orientação a objeto. O objetivo é avaliar a experiênica em escrever código de fácil manutenção, baixo acoplamento, e alta coesão.
 
 ### 🚀Sobre o Projeto
 
-Este é um sistema para clínicas que consomem a API da Feegow para listar médicos por especialidades, além de várias outras funcionalidades, no qual permite o (a) atendente realizar a consulta dos profissionais e fazer o agendamento do (aa) paciente com o (a) profissional disponível.
+Este é um sistema para clínicas que consomem a API da Feegow para listar médicos por especialidades, além de várias outras funcionalidades, no qual permite o (a) atendente realizar a consulta dos profissionais e fazer o agendamento do (a) paciente com o (a) profissional disponível.
 
 ### 💻Tecnologias
 
